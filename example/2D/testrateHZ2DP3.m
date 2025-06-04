@@ -26,7 +26,7 @@ ld = 1;
 [param, sigma_exact, u_exact, f_exact] = smoothdata2D(mu,ld);
 
 %% different mesh sizes
-N1_ = [2,4,8,16,32]';
+N1_ = [2,4,8,16,32,64]';
 N_test = length(N1_);
 sigma_L2error = zeros(N_test,1);
 u_L2error = zeros(N_test,1);
