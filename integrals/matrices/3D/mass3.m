@@ -37,7 +37,7 @@ end
 
 %% compute non-zeros
 % phi at quadrature points (scalar Lagrange basis functions)
-phi = LagrangeBasis3(k,quadorder);
+phi = lagrangebasis3(k,quadorder);
 for p = 1:nQuad 
     index = 0;
     for i = 1:dimPk

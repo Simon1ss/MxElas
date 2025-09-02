@@ -26,7 +26,7 @@ end
 fquadorder = 2*k; % how to choose ???
 [lambdaf,weightf] = quadpts(fquadorder);
 nQuadf = size(lambdaf,1);
-phi = LagrangeBasis2(k, fquadorder); % nQuadf x dimPk_u
+phi = lagrangebasis2(k, fquadorder); % nQuadf x dimPk_u
 
 % compute integral
 bt1 = zeros(NT,dimPk_u);

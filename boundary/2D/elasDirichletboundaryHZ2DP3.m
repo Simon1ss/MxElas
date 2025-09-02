@@ -26,7 +26,7 @@ uDquadorder = 2*k_sigma; % TBD
 [lambdauD,weightuD] = quadpts1(uDquadorder);
 nQuaduD = size(lambdauD,1);
 % value of Pk basis functions at quad pts (scalar part of HZ stress is Lagrange element)
-bdphi = LagrangeBasis1(k_sigma,uDquadorder);
+bdphi = lagrangebasis1(k_sigma,uDquadorder);
 % length of edge
 el = sqrt(sum((node(DirichletEdge(:,1),:) - node(DirichletEdge(:,2),:)).^2,2));
 ue_1 = zeros(size(DirichletEdge,1),dimPk_sigma_D);

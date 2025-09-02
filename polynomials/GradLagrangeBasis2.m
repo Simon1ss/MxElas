@@ -1,4 +1,4 @@
-function [Dphi] = GradLagrangeBasis2(node, elem, k, quadorder)
+function [Dphi] = gradlagrangebasis2(node, elem, k, quadorder)
 %GRADLAGRANGEBASIS2
 %   Inputs: k, polynomial order (k=2,3)
 %           quadorder, quadrature order

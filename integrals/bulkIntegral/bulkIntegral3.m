@@ -29,7 +29,7 @@ end
 fquadorder = 2*k;
 [lambdaf,weightf] = myquadpts3(fquadorder);
 nQuadf = size(lambdaf,1);
-phi = LagrangeBasis3(k, fquadorder); % nQuadf x dimPk_u
+phi = lagrangebasis3(k, fquadorder); % nQuadf x dimPk_u
 
 % compute integral
 bt1 = zeros(NT,dimPk_u);

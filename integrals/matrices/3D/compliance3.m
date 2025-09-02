@@ -66,7 +66,7 @@ for i = 1 : 6*dimPk
 end
 
 %% values of Pk Lagrange basis functions at quadrature points
-phi = LagrangeBasis3(k, quadorder); % nQuad x dimPk
+phi = lagrangebasis3(k, quadorder); % nQuad x dimPk
 phip2 = kron(phi,ones(1,6)); % nQuad x (6*dimPk)
 
 %% compute non-zeros

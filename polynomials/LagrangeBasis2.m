@@ -1,4 +1,4 @@
-function [phi] = LagrangeBasis2(k, quadorder)
+function [phi] = lagrangebasis2(k, quadorder)
 %LAGRANGEBASIS2
 %   Inputs: k, polynomial order
 %           quadorder, quadrature order

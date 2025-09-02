@@ -42,9 +42,9 @@ quadorder = (k_sigma-1)+k_u;
 [~, w] = myquadpts3(quadorder);
 
 %% compute polynomials and gradients
-phi_u = LagrangeBasis3(k_u, quadorder);
+phi_u = lagrangebasis3(k_u, quadorder);
 nQuad = size(phi_u,1);
-Dphi_sigma = GradLagrangeBasis3(node, elem, k_sigma, quadorder);
+Dphi_sigma = gradlagrangebasis3(node, elem, k_sigma, quadorder);
 
 %% element volume
 [~,volume] = gradbasis3(node,elem);

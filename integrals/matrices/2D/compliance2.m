@@ -66,7 +66,7 @@ end
 
 
 %% values of Pk Lagrange basis functions at quadrature points
-phi = LagrangeBasis2(k, quadorder); % nQuad x dimPk
+phi = lagrangebasis2(k, quadorder); % nQuad x dimPk
 phip2 = kron(phi,ones(1,3)); % nQuad x (3*dimPk)
 
 

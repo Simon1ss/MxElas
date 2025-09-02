@@ -41,7 +41,7 @@ end
 nQuad = size(lambda,1);
 
 % value of basis function at quadrature points
-phi = LagrangeBasis2(k,quadorder); % nQuad x dimPk
+phi = lagrangebasis2(k,quadorder); % nQuad x dimPk
 
 %% numerical integral
 err11L2 = zeros(NT,1);
